@@ -1,0 +1,191 @@
+/* Shared CSS styles for all pages */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+nav {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #f39c12;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Additional CSS styles for specific elements */
+h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+/* Index page specific styles */
+main h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #e67e22;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Recipes page specific styles */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipe {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.recipe h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #555;
+}
+
+.recipe p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #777;
+}
+
+.recipe ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recipe li {
+    margin-bottom: 5px;
+}
+
+/* Categories page specific styles */
+ul {
+    margin-left: 20px;
+}
+
+/* About page specific styles */
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Login page specific styles */
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #444;
+}
+
+.login-form button {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .recipe {
+        width: 100%;
+    }
+}
